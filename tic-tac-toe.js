@@ -18,6 +18,16 @@ window.onload = function() {
         }
         
     })
+    
+    squares.forEach(function (square) {
+        square.addEventListener('mouseover', function () {
+            square.classList.add('hover'); // Apply hover effect
+        });
+
+        square.addEventListener('mouseout', function () {
+            square.classList.remove('hover'); // Remove hover effect
+        });
+    });
 })
 }
 
